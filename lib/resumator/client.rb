@@ -49,6 +49,10 @@ module Resumator
         Client.mash(JSON.parse(resp.body))
       end
     end
+    
+    def applicant(applicant_id)
+      get "applicants/#{applicant_id}"
+    end
 
     def applicants(options = {})
       get("applicants", options)
