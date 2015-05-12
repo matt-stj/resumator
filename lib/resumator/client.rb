@@ -35,7 +35,7 @@ module Resumator
           data = get(object, options)
           out = out | data
           options[:page] += 1
-        end while data.count >= 100
+        end while data.count >= 300
         return out
       else
         if options[:id]
