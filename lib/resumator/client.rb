@@ -53,6 +53,10 @@ module Resumator
     def applicant(applicant_id)
       get "applicants/#{applicant_id}"
     end
+    
+    def applicant(options = {})
+      get("applicants2jobs", options)
+    end
 
     def applicants(options = {})
       get("applicants", options)
