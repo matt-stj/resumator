@@ -62,7 +62,7 @@ module Resumator
       get("jobs", options)
     end
     
-    def jobs(job_id)
+    def job(job_id)
       get "jobs/#{job_id}"
     end
 
